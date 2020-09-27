@@ -13,6 +13,7 @@
     комплексные удобрения, икар, ikar, болким, BIOLCHIM, biolchim, фосто, боромин гель, филлотон, фульвумин">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174656196-1"></script>
@@ -44,6 +45,8 @@
       <div><img src="https://mc.yandex.ru/watch/66299764" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+      <script src="js/wow.min.js"></script>
+      <script> new WOW().init(); </script>
 
     <title>AGRIC Умножаем урожай</title>
 </head>
@@ -52,7 +55,7 @@
     <header class="header">
       <div class="wrapper__header">
         <nav class="nav__header">
-          <div class="logo-wrap"><img src="./img/logo agric.svg" alt="logo" class="logo"><p class="logo-text">AGRIC</p></div>
+          <div class="logo-wrap"><img src="./img/logo agric.svg" alt="logo" class="logo"><p class="logo-text">AGRIC24</p></div>
           <div class="contact-wrapper">
              <a href="https://api.whatsapp.com/send?phone=79880976777" target="_blank" class="whatsApp">
                <img src="./img/whatsApp.svg" alt="whatsApp" class="img-whatsapp">
@@ -64,37 +67,45 @@
         </nav>
       </div>
       <div class="header-text">
-        <h1 class="text__header">AGRIC</h1>
-        <h3 class="subtext__header">Умножеам урожай</h3>
+        <h1 class="text__header wow zoomIn">AGRIC<span>24</span></h1>
+        <p class="subtext__header wow zoomIn">международная онлайн-платформа, профессионально занимающаяся торговлей средств защиты растений, 
+        агрохимикатов, микроудобрений и семян.</p>
       </div>
     </header>
     <div class="wrapper__content">
-      <section class="slider-one">
-        <div class="slider">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+      <section class="info">
+        <p class="info-text">Коллектив компании состоит из группы единомышленников, имеющих опыт производства препаратов для сельского хозяйства с
+        2002 года, что позволяет постоянно совершенствовать препаративные формы и получать новые сочетания действующих веществ
+        для достижения максимального экономического и хозяйственного результата.
+        В нашем портфеле обширный набор пестицидов высокого европейского качества по приемлемой цене, благодаря чему они
+        получили широкое распространение и признание среди сельскохозяйственных товаропроизводителей юга России, Центрального
+        Черноземья, Поволжья, Сибири, Урала и других регионов.</p>
+        <div class="info-img">
+          <img src="./img/cereals.png" alt="cereals">
+          <img src="./img/corn.png" alt="corn">
+          <img src="./img/fruit.png" alt="fruit">
+          <img src="./img/floral.png" alt="floral">
+          <img src="./img/soy.png" alt="soy">
+          <img src="./img/rape.png" alt="rape">
+          <img src="./img/sugar_beet.png" alt="sugar_beet">
+          <img src="./img/sunflower.png" alt="sunflower">
+          <img src="./img/vegatables.png" alt="vegatables">
         </div>
       </section>
-      <section class="slider-two">
-        <div class="slider">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+      <section class="product">
+        <div class="product-img">
+          <img src="./img/ikar-logo-on-top.png" alt="ikar">
+          <img src="./img/logo-meristem.png" alt="meristem">
+          <img src="./img/yara.png" alt="yara">
+          <img src="./img/cultifort-logo.jpg" alt="cultifort">
+          <img src="./img/icl-group.png" alt="icl">
+          <img src="./img/biolchim.png" alt="biolchim">
         </div>
-      </section>
-      <section class="slider-three">
-        <div class="slider">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
+        <p class="product-text">Компания предлагает отечественным аграриям широкую продуктовую линейку удобрений от лучших мировых производителей и
+        качественный агрохимический аналитический сервис, а так же занимается подбором программ питания для различных
+        сельскохозяйственных культур и коррекцией развития и питания путем внесения " по листу " некорневых подкормок,
+        биостимуляторов и гормональных препаратов ведущих мировых и отечественных производителей. В портфеле компании передовые
+        решения от мировых лидеров в поставках семенного материала и средств защиты растений.</p>
       </section>
     </div>
 
@@ -116,20 +127,19 @@
 
         <div class="form-group">
           <label class="form-label" for="name">Your name</label>
-          <input type="text" class="form-control" id="name" name="Имя" placeholder="Your name" tabindex="1" required>
+          <input type="text" class="form-control" id="name" name="Имя" placeholder="Your name *" tabindex="1" required>
         </div>
         <div class="form-group">
           <label class="form-label" for="email">Your Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2"
-            required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
         </div>
         <div class="form-group">
           <label class="form-label" for="subject">Your phone</label>
-          <input type="text" class="form-control" id="phone" name="Телефон" placeholder="Your phone" tabindex="3">
+          <input type="text" class="form-control" id="phone" name="Телефон" placeholder="Your phone *" tabindex="3" required>
         </div>
         <div class="form-group">
           <label class="form-label" for="message">Message</label>
-          <textarea rows="5" cols="55" name="Сообщение" class="form-control" id="message" placeholder="Message..."
+          <textarea rows="5" cols="55" name="Сообщение" class="form-control" id="message" placeholder="Message... *"
             tabindex="4" required></textarea>
         </div>
         <div class="text-center">
@@ -140,7 +150,7 @@
        </div>
     </div>
     <footer class="footer">
-
+      <p>Все права защищены © <span>AGRIC24</span></p>
     </footer>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
