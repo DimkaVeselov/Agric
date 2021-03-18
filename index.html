@@ -11,8 +11,8 @@
     органические удобрения, удобрения для картофеля, фосфорные удобрения, удобрения для клубники, состав удобрения, 
     огурцы удобрения, какое удобрение при посадке, удобрение цена, лучшее удобрение, удобрение калий, 
     комплексные удобрения, икар, ikar, болким, BIOLCHIM, biolchim, фосто, боромин гель, филлотон, фульвумин">
-    <link rel="stylesheet" href="style/fonts.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -55,7 +55,7 @@
     <header class="header">
       <div class="wrapper__header">
         <nav class="nav__header">
-          <div class="logo-wrap"><img src="./img/logo agric.svg" alt="logo" class="logo"><p class="logo-text">AGRIC24</p></div>
+          <div class="logo-wrap"><img src="./img/logo agric.svg" alt="logo" class="logo"><p class="logo-text">AGRIC<span>24</span></p></div>
           <div class="contact-wrapper">
              <a href="https://api.whatsapp.com/send?phone=79880976777" target="_blank" class="whatsApp">
                <img src="./img/whatsApp.svg" alt="whatsApp" class="img-whatsapp">
@@ -111,49 +111,47 @@
 
      <!-- форма обратной связи -->
     <div class="form__wrapper">
-       <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-      <h2 class='form-heading'>заказать обратный звонок</h2>
-    </div>
+       <div class="title">
+          <h2 class='form-heading'>получить бесплатную консультацию</h2>
        </div>
        <div class="row">
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
-      <form id="contact-form" class="form" action="#" method="POST" role="form">
-
-        <!-- Скрытые обязательные поля -->
-        <input type="hidden" name="project_name" value="Agric24">
-        <input type="hidden" name="admin_email" value="Manager.agric24@gmail.com">
-        <input type="hidden" name="form_subject" value="Заявка на звонок Agric24">
-
-        <div class="form-group">
-          <label class="form-label" for="name">Your name</label>
-          <input type="text" class="form-control" id="name" name="Имя" placeholder="Your name *" tabindex="1" required>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+          <form id="contact-form" class="form" action="#" method="POST" role="form">
+          
+            <!-- Скрытые обязательные поля -->
+            <input type="hidden" name="project_name" value="Agric24">
+            <input type="hidden" name="admin_email" value="Manager.agric24@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка на звонок Agric24">
+          
+            <div class="form-group">
+              <label class="form-label" for="name">Your name</label>
+              <input type="text" class="form-control" id="name" name="Имя" placeholder="Your name * " tabindex="1" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Your phone</label>
+              <input type="text" class="form-control" id="phone" name="Телефон" placeholder="Your phone *" tabindex="3" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea rows="5" cols="55" name="Сообщение" class="form-control" id="message" placeholder="Message... *"
+                tabindex="4" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-start-order">заказать</button>
+            </div>
+          </form>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="email">Your Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="subject">Your phone</label>
-          <input type="text" class="form-control" id="phone" name="Телефон" placeholder="Your phone *" tabindex="3" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="message">Message</label>
-          <textarea rows="5" cols="55" name="Сообщение" class="form-control" id="message" placeholder="Message... *"
-            tabindex="4" required></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-start-order">заказать</button>
-        </div>
-      </form>
-    </div>
        </div>
     </div>
     <footer class="footer">
-      <p>Все права защищены © <span>AGRIC24</span></p>
+      <div>Все права защищены <p>AGRIC<span>24</span></p>©</div>
     </footer>
     </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="./js/form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html> 
